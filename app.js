@@ -13,6 +13,6 @@ app.use('/api/students', students.router)
 app.use('/api/events', events.router)
 app.use('/api/students-in-events', studentsInEvents)
 
-const port = process.env.PORT || 8888
+const port = process.env.PORT || 3000 || 8888 || 3100
 
 app.listen(port, () => console.log(`Listening into port ${port}`))
