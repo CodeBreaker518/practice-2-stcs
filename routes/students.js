@@ -3,11 +3,7 @@ const Joi = require('joi')
 const router = express.Router()
 
 // simulating db
-const students = [
-  { id: 1, name: 'John', email: 'john@test.com', career: 'LISC' },
-  { id: 2, name: 'Jane', email: 'jane@test.com', career: 'LISC' },
-  { id: 3, name: 'Bob', email: 'bob@test.com', career: 'LISC' },
-]
+const students = []
 // importing events array
 const eventsRoute = require('./events')
 const { events } = eventsRoute
