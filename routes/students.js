@@ -59,7 +59,7 @@ router.post('/', (req, res) => {
       id: students.length + 1,
       name: req.body.name,
       email: req.body.email,
-      career: req.body.career,
+      career: req.body.career.toUpperCase(),
     };
     // validate email
     if (student.email && students.find((s) => s.email === student.email && s.id !== student.id)) {
@@ -92,6 +92,7 @@ router.put('/:id', (req, res) => {
   // set values to student
   student.name = req.body.name;
   student.email = req.body.email;
+  student.career = req.body.career.toUpperCase();
   //send student
   res.send(student);
 });

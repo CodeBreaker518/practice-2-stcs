@@ -89,7 +89,7 @@ router.put('/:id', (req, res) => {
     return res.status(400).send('An event with the same date, hour and place already exists');
   }
   //set values to event attributes
-  event.tile = title;
+  event.title = title;
   event.date = date;
   event.hour = hour;
   event.place = place;
