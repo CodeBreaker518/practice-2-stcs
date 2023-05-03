@@ -10,8 +10,12 @@ const Joi = require('joi');
 const express = require('express');
 const app = express();
 
+<<<<<<< HEAD
 // Parsing incoming requests with JSON payloads
 app.use(express.json());
+=======
+const port = process.env.PORT || 3000 || 8888 || 3100
+>>>>>>> 71115d85b6dbfabd8a0354b2f302c147a1ef908a
 
 // Serving static files from the 'public' directory
 app.use(express.static(`public`));
