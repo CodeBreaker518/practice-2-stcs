@@ -4,9 +4,9 @@ const router = express.Router();
 
 // simulating db
 const students = [
-  { id: 1, name: 'John', email: 'john@test.com', career: 'LISC' },
-  { id: 2, name: 'Jane', email: 'jane@test.com', career: 'LISC' },
-  { id: 3, name: 'Bob', email: 'bob@test.com', career: 'LISC' },
+  { id: 1, name: 'Diana', email: 'dianan@test.com', career: 'LISC' },
+  { id: 2, name: 'Alejandro', email: 'alejandro@test.com', career: 'LISC' },
+  { id: 3, name: 'Mario', email: 'mario@test.com', career: 'LISC' },
 ];
 // importing events array
 // (to delete a student from an event if the student is deleted)
