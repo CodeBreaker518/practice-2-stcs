@@ -8,15 +8,15 @@ let eventId = 0;
 
 // ------------------------ VALIDATE EVENT INPUT -------------------------
 const eventSchema = Joi.object({
-  title: Joi.string().required(),
+  title: Joi.string().min(3).required(),
   date: Joi.string()
     .regex(/^([0-9]{2})-([0-9]{2})-([0-9]{4})$/) // DD-MM-YYYY
     .required(),
   hour: Joi.string()
     .regex(/^[0-9]{2}:[0-9]{2}$/) // HH:mm
     .required(),
-  place: Joi.string().required(),
-  speakerName: Joi.string().required(),
+  place: Joi.string().min(3).required(),
+  speakerName: Joi.string().min(3).required(),
 });
 
 // ------------------------ GET (read) all events -------------------------

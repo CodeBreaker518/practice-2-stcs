@@ -16,7 +16,7 @@ const { events } = eventsRoute;
 // ------------------------ VALIDATE STUDENT INPUT -------------------------
 const validateStudent = (student) => {
   const schema = Joi.object({
-    name: Joi.string().required(),
+    name: Joi.string().min(3).required(),
     email: Joi.string().email().required(),
     career: Joi.string().uppercase().required(),
   });
